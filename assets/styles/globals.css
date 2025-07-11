@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+	--breakpoint-xs: 480px;
+
+	--color-vs-light-gray: rgb(36, 39, 45);
+	--color-vs-dark-gray: rgb(31, 34, 39);
+	--color-vs-red: rgb(237, 106, 94);
+	--color-vs-yellow: rgb(245, 191, 79);
+	--color-vs-green: rgb(99, 200, 86);
+}
+
+/** Reset Styles **/
+/* *,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ */

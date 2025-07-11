@@ -1,11 +1,9 @@
+import TopBar from "@/components/outer-components/TopBar"
+
 export default function Home() {
 	return (
-		<main className="min-h-screen flex flex-col items-center justify-center bg-red-600 text-white px-4">
-			<h1 className="text-4xl font-bold mb-4">Red Background</h1>
-			<p className="text-lg text-center max-w-xl">
-				This page has a red background using Tailwind's <code>bg-red-600</code>{" "}
-				class.
-			</p>
+		<main className="min-h-screen flex flex-col bg-gray-100 text-white ">
+			<TopBar />
 		</main>
 	)
 }
