@@ -1,9 +1,11 @@
 import TopBar from "@/components/outer-components/TopBar"
+import SideBar from "@/components/outer-components/SideBar"
 
 export default function Home() {
 	return (
-		<main className="min-h-screen flex flex-col bg-gray-100 text-white ">
+		<main className="flex flex-col h-screen bg-gray-100 text-white ">
 			<TopBar />
+			<SideBar />
 		</main>
 	)
 }

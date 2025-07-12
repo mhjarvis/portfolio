@@ -5,6 +5,7 @@
 @theme {
 	--breakpoint-xs: 480px;
 
+	--color-vs-gray-100: rgb(216, 218, 223);
 	--color-vs-gray-200: rgb(150, 156, 169);
 	--color-vs-gray-300: rgb(53, 56, 61);
 	--color-vs-light-gray: rgb(36, 39, 45);
