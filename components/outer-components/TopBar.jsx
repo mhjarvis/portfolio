@@ -1,36 +1,38 @@
-import { VscChromeMinimize } from "react-icons/vsc"
-import { IoCloseOutline } from "react-icons/io5"
+import {
+	VscChromeClose,
+	VscChromeMinimize,
+	VscArrowLeft,
+	VscArrowRight,
+	VscSearch,
+	VscCopilot,
+	VscChevronDown,
+	VscLayout,
+	VscLayoutSidebarRight,
+	VscLayoutPanelOff,
+	VscLayoutSidebarRightOff,
+} from "react-icons/vsc"
 import { RiExpandLeftRightFill } from "react-icons/ri"
-import { GoArrowLeft } from "react-icons/go"
-import { GoArrowRight } from "react-icons/go"
-import { RxMagnifyingGlass } from "react-icons/rx"
-import { RiCopilotFill } from "react-icons/ri"
-import { IoChevronDown } from "react-icons/io5"
-import { VscLayout } from "react-icons/vsc"
-import { VscLayoutSidebarRight } from "react-icons/vsc"
-import { VscLayoutPanelOff } from "react-icons/vsc"
-import { VscLayoutSidebarRightOff } from "react-icons/vsc"
 
 export default function TopBar() {
 	return (
-		<div className="h-8 px-3 flex items-center justify-between bg-vs-light-gray text-white rounded-t-md">
+		<div className="h-10 px-3 flex items-center justify-between bg-vs-light-gray text-white rounded-t-md">
 			{/* */}
 			{/* Close, Minimize, Expand Buttons */}
 			{/* */}
 			<div className="group flex gap-2">
 				<div className="relative w-3 h-3 bg-vs-red rounded-lg cursor-default">
-					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-700">
-						<IoCloseOutline className="w-3" />
+					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-800">
+						<VscChromeClose className="w-2" />
 					</span>
 				</div>
 				<div className="relative w-3 h-3 bg-vs-yellow rounded-lg cursor-default">
-					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-700">
-						<VscChromeMinimize className="w-3" />
+					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-800">
+						<VscChromeMinimize className="w-2" />
 					</span>
 				</div>{" "}
 				<div className="relative w-3 h-3 bg-vs-green rounded-lg cursor-default">
-					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-700 ">
-						<RiExpandLeftRightFill className="w-3 rotate-45" />
+					<span className="hidden group-hover:flex absolute inset-0 items-center justify-center text-xs text-gray-800 ">
+						<RiExpandLeftRightFill className="w-2 rotate-45" />
 					</span>
 				</div>
 			</div>
@@ -38,15 +40,15 @@ export default function TopBar() {
 			{/* Search Icon, Arrows, Copilot Icon */}
 			{/* */}
 			<div className="flex items-center gap-4">
-				<GoArrowLeft className="text-xl text-gray-500 hover:text-gray-300 cursor-pointer" />
-				<GoArrowRight className=" text-xl text-gray-500 hover:text-gray-300 cursor-pointer" />
-				<div className="w-[30vw] h-5 flex items-center justify-center gap-1 bg-vs-gray-300 rounded-md">
-					<RxMagnifyingGlass className="text-lg text-gray-500 rotate-90" />
+				<VscArrowLeft className="text-lg text-gray-500 hover:text-gray-300 cursor-pointer" />
+				<VscArrowRight className=" text-lg text-gray-500 hover:text-gray-300 cursor-pointer" />
+				<div className="w-[30vw] h-6 flex items-center justify-center gap-2 bg-vs-gray-300 border-[.5px] border-gray-500 rounded-md">
+					<VscSearch className="text-sm text-gray-500" />
 					<p className="text-xs text-gray-300">portfolio</p>
 				</div>
 				<div className="flex items-center justify-center gap-1">
-					<RiCopilotFill className="text-gray-300 text-lg" />
-					<IoChevronDown className="text-gray-300 text-sm" />
+					<VscCopilot className="text-gray-300 text-md" />
+					<VscChevronDown className="text-gray-300 text-sm" />
 				</div>
 			</div>
 			{/* */}
