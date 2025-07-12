@@ -13,7 +13,7 @@ import {
 } from "react-icons/vsc"
 import { RiExpandLeftRightFill } from "react-icons/ri"
 
-export default function TopBar() {
+export default function MenuBar() {
 	return (
 		<div className="h-10 px-3 flex items-center justify-between bg-vs-light-gray text-white rounded-t-md">
 			{/* */}
