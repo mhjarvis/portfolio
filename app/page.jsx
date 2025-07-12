@@ -1,11 +1,15 @@
-import TopBar from "@/components/outer-components/TopBar"
-import SideBar from "@/components/outer-components/SideBar"
+import MenuBar from "@/components/outer-components/MenuBar"
+import ActivityBar from "@/components/outer-components/ActivityBar"
+import StatusBar from "@/components/outer-components/StatusBar"
 
 export default function Home() {
 	return (
 		<main className="flex flex-col h-screen bg-gray-100 text-white ">
-			<TopBar />
-			<SideBar />
+			<MenuBar />
+			<div className="flex flex-1 overflow-hidden">
+				<ActivityBar />
+			</div>
+			<StatusBar />
 		</main>
 	)
 }
