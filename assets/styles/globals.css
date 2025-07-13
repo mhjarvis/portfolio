@@ -16,20 +16,28 @@
 	--color-vsblue-500: rgb(107, 135, 204);
 }
 
+@font-face {
+	font-family: "Menlo";
+	src: local("Menlo"), local("Menlo Regular"),
+		url("/assets/fonts/menlo.woff2") format("woff2");
+}
+
+/* Utility class */
 .fira-code {
-	font-family: "Fira Code", monospace;
+	font-family: "Menlo", "Fira Code", monospace;
 	font-optical-sizing: auto;
 	font-weight: 500;
 	font-style: normal;
 }
 
-* {
-	font-family: monospace, "Fira Code";
-	letter-spacing: -0.5px;
+/* Global font (if needed) */
+body {
+	font-family: "Menlo", "Fira Code", monospace;
+	letter-spacing: -0.6px;
 }
 
 /** Reset Styles **/
-/* *,
+/* *
 ::after,
 ::before {
 	margin: 0;
