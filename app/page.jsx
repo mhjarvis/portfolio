@@ -1,6 +1,7 @@
 import MenuBar from "@/components/outer-components/MenuBar"
 import ActivityBar from "@/components/outer-components/ActivityBar"
 import StatusBar from "@/components/outer-components/StatusBar"
+import Explorer from "@/components/innter-components/Explorer"
 
 export default function Home() {
 	return (
@@ -8,6 +9,7 @@ export default function Home() {
 			<MenuBar />
 			<div className="flex flex-1 overflow-hidden">
 				<ActivityBar />
+				<Explorer />
 			</div>
 			<StatusBar />
 		</main>
